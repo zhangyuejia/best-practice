@@ -1,7 +1,7 @@
-# 1. 配置相关
+## 1. 配置相关
 
-# 2. SQL相关
-## 2.1 判断表是否存在
+## 2. SQL相关
+### 2.1 判断表是否存在
 ```sql
     <select id="isTableExisted" resultType="java.lang.Boolean">
         SELECT COUNT(*) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA=DATABASE() AND TABLE_NAME = UPPER(#{tableName})
